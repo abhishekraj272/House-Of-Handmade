@@ -2,9 +2,9 @@
 
 {% block content %}
 <center>
-<div class="card" style="width: 18rem;">
+<div class="card">
 <div class="card-body">
-<h2>Login with HandiCraft👏</h2>
+<h2>Login to HandiCraft👋</h2>
 <br>
 <p class="card-text">
 <form>
@@ -16,29 +16,15 @@
 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 </div>
 <br>
-<div class="form-group">
-<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-enter Password">
-</div>
+<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 <br>
-<div class="form-group">
-<input type="number" class="form-control" id="exampleInputNumber" placeholder="Mobile Number">
-</div>
-<br>
-I'm a  &nbsp;
-<div class="form-check form-check-inline">
-<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-<label class="form-check-label" for="inlineCheckbox1">Female</label>
-</div>
-<div class="form-check form-check-inline">
-<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-<label class="form-check-label" for="inlineCheckbox2">Male</label>
-</div>
-<br>
-<br>
-<button type="submit" class="btn">Register</button>
+<button type="submit" class="btn" id="loginbtn">Login!</button>
 </form>
-Already have an Account? &nbsp;
-<a href="#" id="login">Login!</a>
+<br>
+<a href="/recover" id="recover">Recover Password</a>
+<br>
+New to HandiCraft? &nbsp;
+<a href="/signup" id="create">Create Account</a>
 </p>
 </div>
 </div>

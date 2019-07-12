@@ -21,3 +21,6 @@ def scarfs_page(request):
 
 def socks_page(request):
     return render(request,"socks.html")
+
+def recover_page(request):
+    return render(request,"recover.html")

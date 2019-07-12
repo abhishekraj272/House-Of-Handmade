@@ -66,11 +66,12 @@ main
   margin-left: 50px;
   margin-right: 50px;
   font-family: Pacifico, sans-serif;
+  background-color: rgba(154, 18, 179, 0.1);
 }
 .card
 {
   border-radius: 20px;
-  width: 18rem;
+  width: 28rem;
 }
 .card-img-top
 {
@@ -80,4 +81,28 @@ main
 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#register
+{
+  border-radius: 10px;
+  background-color:rgba(154, 18, 179, 1);
+  color: #fff;
+}
+#loginbtn
+{
+  border-radius: 10px;
+  background-color:rgba(154, 18, 179, 1);
+  color: #fff;
+}
+#login
+{
+  color: rgba(154, 18, 179, 1);
+}
+#create
+{
+  color: rgba(154, 18, 179, 1);
+}
+#recover
+{
+  color: rgba(154, 18, 179, 1);
 }
