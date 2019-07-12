@@ -70,19 +70,14 @@ main
 .card
 {
   border-radius: 20px;
+  width: 18rem;
 }
 .card-img-top
 {
   border-radius: 20px;
 }
-#log
+.card-body
 {
-  margin-right: 20px;
-  text-decoration-line: none;
-  color: rgba(154, 18, 179, 1) !important;
-}
-#sign
-{
-  text-decoration-line: none;
-  color: rgba(154, 18, 179, 1)!important;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -22,22 +22,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sweaters</a>
+        <a class="nav-link" href="/sweaters">Sweaters</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Socks</a>
+        <a class="nav-link" href="/socks">Socks</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vases</a>
+        <a class="nav-link" href="/vases">Vases</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Earrings</a>
+        <a class="nav-link" href="/earrings">Earrings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Scarfs</a>
+        <a class="nav-link" href="/scarfs">Scarfs</a>
       </li>
     </ul>
     <form class="form-inline my-lg-0">
@@ -45,7 +45,25 @@
     </form>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item1">
-        <a class="nav-link" href="#"> <img class="icons-nav" src="{% static "HandiCraft/user.png" %}" alt="User"> <br> Profile</a>
+        <div class="dropdown">
+  <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img class="icons-nav" src="{% static "HandiCraft/user.png" %}" alt="User">
+    <br> Profile
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Welcome <hr>
+To access account and manage orders <br>
+<center>
+<a id="log" href="/login">Login!</a>
+<a id="sign" href="/signup">Sign Up!</a>
+</center>  <hr>
+   </a>
+    <a class="dropdown-item" href="#">Orders</a>
+    <a class="dropdown-item" href="#">Saved Cards</a>
+    <a class="dropdown-item" href="#">Saved Addresses</a>
+  </div>
+  </div>
       </li>
       <li class="nav-item1">
         <a class="nav-link" href="#"> <img class="icons-nav" src="{% static "HandiCraft/sale.png" %}" alt="Sales"> <br>  Offers!</a>
