@@ -71,7 +71,6 @@ main
 .card
 {
   border-radius: 20px;
-  width: 28rem;
 }
 .card-img-top
 {
@@ -94,6 +93,24 @@ main
   background-color:rgba(154, 18, 179, 1);
   color: #fff;
 }
+#add
+{
+  border-radius: 10px;
+  background-color:rgba(154, 18, 179, 1);
+  color: #fff;
+}
+#buy
+{
+  border-radius: 10px;
+  background-color:rgba(154, 18, 179, 1);
+  color: #fff;
+}
+#reset
+{
+  border-radius: 10px;
+  background-color:rgba(154, 18, 179, 1);
+  color: #fff;
+}
 #login
 {
   color: rgba(154, 18, 179, 1);
@@ -105,4 +122,8 @@ main
 #recover
 {
   color: rgba(154, 18, 179, 1);
+}
+
+a:hover, a:active, a:focus {
+  color:rgba(154, 18, 179, 1);
 }

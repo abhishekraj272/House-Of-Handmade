@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import (Sweater,Sock,Scarf,Vase,Earring)
 
 # Create your views here.
 def login_page(request):
@@ -8,19 +9,32 @@ def signup_page(request):
     return render(request,"signup.html")
 
 def sweaters_page(request):
-    return render(request,"sweaters.html")
+    qs=Sweater.objects.all();
+    context={"objectlist":qs}
+    return render(request,"sweaters.html",context)
 
 def earrings_page(request):
-    return render(request,"earrings.html")
+    qs=Earring.objects.all();
+    context={"objectlist":qs}
+    return render(request,"earrings.html",context)
 
 def vases_page(request):
-    return render(request,"vases.html")
+    qs=Vase.objects.all();
+    context={"objectlist":qs}
+    return render(request,"vases.html",context)
 
 def scarfs_page(request):
-    return render(request,"scarfs.html")
+    qs=Scarf.objects.all();
+    context={"objectlist":qs}
+    return render(request,"scarfs.html",context)
 
 def socks_page(request):
-    return render(request,"socks.html")
+    qs=Sock.objects.all();
+    context={"objectlist":qs}
+    return render(request,"socks.html",context)
 
 def recover_page(request):
     return render(request,"recover.html")
+
+def terms_page(request):
+    return render(request,"termsandconditions.html")
