@@ -120,6 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+    os.path.join(BASE_DIR, "HandiCraft/static"),
+'/home/aryama/Project/HandiCraft/static',
 ]
+STATIC_ROOT='/home/aryama/Project/site'

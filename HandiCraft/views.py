@@ -38,3 +38,6 @@ def recover_page(request):
 
 def terms_page(request):
     return render(request,"termsandconditions.html")
+
+def details_page(request):
+    return render(request,"sweater-details.html")
