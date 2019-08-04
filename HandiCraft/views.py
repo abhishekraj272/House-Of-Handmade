@@ -39,5 +39,17 @@ def recover_page(request):
 def terms_page(request):
     return render(request,"termsandconditions.html")
 
-def details_page(request):
+def sweater_detail_page(request):
     return render(request,"sweater-details.html")
+
+def vase_detail_page(request):
+    return render(request,"vase-details.html")
+
+def scarf_detail_page(request):
+    return render(request,"scarfs-detail.html")
+
+def socks_detail_page(request):
+    return render(request,"socks-detail.html")
+
+def earring_detail_page(request):
+    return render(request,"earring-detail.html")

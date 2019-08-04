@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import home_page
-from HandiCraft.views import (login_page,signup_page,scarfs_page,socks_page,earrings_page,sweaters_page,vases_page,recover_page,terms_page,details_page)
+from HandiCraft.views import (login_page,signup_page,scarfs_page,socks_page,earrings_page,sweaters_page,vases_page,recover_page,terms_page,sweater_detail_page,scarf_detail_page,vase_detail_page,socks_detail_page,earring_detail_page)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,5 +30,9 @@ urlpatterns = [
     path('socks/',socks_page),
     path('recover/',recover_page),
     path('termsandconditions/',terms_page),
-    path('details/',details_page),
+    path('sweater-details/',sweater_detail_page),
+    path('scarf-details/',scarf_detail_page),
+    path('socks-details/',socks_detail_page),
+    path('vase-details/',vase_detail_page),
+    path('earring-details/',earring_detail_page),
 ]
