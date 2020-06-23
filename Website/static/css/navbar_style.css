@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Pacifico&display=swap');
+
+.category-item{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+}
+
+a, a:focus{ 
+    outline:none;
+}
+
+#navbar-container{
+    margin-left: 5%;
+}
+
+#navcol-1{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+footer{
+    font-family: 'Pacifico', sans-serif;
+    
+}
+footer > a:link{
+    color: #000;
+    
+}
+.user-item{
+    font-family: 'Pacifico', sans-serif;
+}
+#search-bar{
+    margin-top: 20px;
+    font-family: 'Pacifico', sans-serif;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (min-width: 1440px) {
+    #search-bar{
+        margin-left: 40px;
+    }
+    #profile-menu{
+        margin-left: 100px;
+    }
+
+}
+
+#search-bar:focus {
+    box-shadow: none;
+	border: none;
+}
+
+
+.btn{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color:rgba(154, 18, 179, 1);
+    color: #fff;
+}
+.btn {
+    transition-duration: 0.4s;
+  }
+  
+.btn:hover {
+    background-color: #fff;
+    color: rgba(154, 18, 179, 1);
+}
+.links-with-no-decoration{
+    text-decoration: none;
+    color: black;
+}
+.links-with-no-decoration:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+li:hover{
+    color: grey;    
+}
