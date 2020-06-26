@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aryamasinha/jsDelivr-Assets@latest/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aryamasinha/jsDelivr-Assets@latest/css/Navigation-Clean.css">
     <link rel="stylesheet" href="{% static "css/navbar_style.css" %}">
+    {% block css-styling %} {% endblock %}
 </head>
 
 <body>
@@ -19,14 +20,14 @@
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto-fluid">
                     <li class="nav-item category-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item category-item" role="presentation"><a class="nav-link" href="#">Sweaters</a></li>
+                    <li class="nav-item category-item" role="presentation"><a class="nav-link" href="/sweaters">Sweaters</a></li>
                     <li class="nav-item category-item" role="presentation"><a class="nav-link" href="#">Socks</a></li>
                     <li class="nav-item category-item" role="presentation"><a class="nav-link" href="#">Vases</a></li>
                     <li class="nav-item category-item" role="presentation"><a class="nav-link" href="#">Earrings</a></li>
                     <li class="nav-item category-item" role="presentation"><a class="nav-link" href="#">Scarfs</a></li>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search For Products 🔍" aria-label="Search">
+                        <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="🔍 Search For Products" aria-label="Search">
                       </form>
 
                     <li id="profile-menu" class="nav-item dropdown user-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
@@ -34,7 +35,8 @@
                             <br> Profile </a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Welcome!</a><a class="dropdown-item" role="presentation" href="#">
                             To access account and manage orders <br>
-                            <button type="button" class="btn">Login!</button> Or <button type="button" class="btn">SignUp!</button> 
+                           <center> <a href="/login"> <button type="button" class="btn">Login!</button> </a> Or 
+                            <a href="/register"><button type="button" class="btn">SignUp!</button> </a> </center>
                         </a></div>
                     </li>
                     <li class="nav-item user-item" role="presentation"><a class="nav-link" href="#"><img style="width: 30px; height:30px;" src="https://cdn.jsdelivr.net/gh/aryamasinha/jsDelivr-Assets@latest/images/sale.png" alt="Loading From Server ⏳"> <br> Offers!</a></li>
@@ -44,32 +46,13 @@
         </div>
     </nav>
     <hr size="color :gray; padding-left :5%; padding-right :5%;">
-    <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
+    <main> 
+      {% block content %}
+      {% endblock %}
+
+    </main>
+   
+
     <footer>
             <hr>
            <center>

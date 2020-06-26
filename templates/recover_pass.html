@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block css-styling %}
+{% load static %}
+<link rel="stylesheet" href="{% static "css/recover_style.css" %}">
+{% endblock %}
+
+{% block content %}
+
+<br>
+<center>
+    <div class="card">
+    <div class="card-body">
+    <h2>Forgot Password?</h2>
+    <br>
+    We will send you a link to reset your password.
+    <p class="card-text">
+    <form>
+    <div class="form-group">
+    <input type="email" class="form-control recover-inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <br>
+    <button type="submit" class="btn" id="reset">Send Reset Link</button>
+    </form>
+    <br>
+    <a href="/login" id="login">Login!</a>
+    </p>
+    </div>
+    </div>
+    </center>
+<br>
+{% endblock %}

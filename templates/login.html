@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+
+{% block css-styling %}
+{% load static %}
+<link rel="stylesheet" href="{% static "css/login_style.css" %}">
+{% endblock %}
+
+{% block content %}
+<br>
+<center>
+<div class="card">
+<div class="card-body">
+<h2>Welcome 💜</h2>
+<br>
+<p class="card-text">
+<form>
+<div class="form-group">
+<input type="email" class="form-control login-inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+</div>
+<br>
+<div class="form-group">
+<input type="password" class="form-control login-inputs" id="exampleInputPassword1" placeholder="Password">
+</div>
+<br>
+<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+<br>
+<button type="submit" class="btn" id="loginbtn">Login!</button>
+</form>
+<br>
+<a href="/recover-password">Recover Password</a>
+<br>
+New to House of Handmade? &nbsp;
+<a href="/register">Create Account</a>
+</p>
+</div>
+</div>
+<br>
+</center>
+{% endblock %}

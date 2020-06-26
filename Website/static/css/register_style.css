@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Pacifico&display=swap');
+
+
+.card{
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px silver;
+    
+}
+@media screen and (min-width: 1440px) {
+    .card{
+        margin-left: 35%;
+        margin-right: 35%; 
+    }    
+}
+
+main{
+    background-color: rgba(154, 18, 179, 0.2);
+    font-family: 'Pacifico', sans-serif;
+}
+
+.signup-inputs, .signup-inputs:focus{
+    box-shadow: 2px 2px 2px 2px rgba(154, 18, 179, 0.1);
+    border:none;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a , a:hover {
+    text-decoration: none;
+    color: gray;
+}
